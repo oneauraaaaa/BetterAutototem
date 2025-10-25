@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "betterautototem",
+	"version": "${version}",
+	"name": "BetterAutototem",
+	"description": "%99.9 Undetectable autototem mod.",
+	"authors": [
+		"oneaura"
+	],
+	"contact": {
+		"homepage": "https://github.com/oneauraaaaa",
+		"sources": "https://github.com/oneauraaaaa"
+	},
+	"license": "MIT",
+	"icon": "assets/betterautototem/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.oneaura.betterautototem.BetterAutototem"
+		],
+        "client": [
+          "com.oneaura.betterautototem.BetterAutototemClient"
+        ]
+	},
+	"mixins": [
+		"betterautototem.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "*",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

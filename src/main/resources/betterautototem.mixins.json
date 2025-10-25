@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.oneaura.betterautototem.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"TotemPopMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
