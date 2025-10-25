@@ -3,23 +3,26 @@
 	"id": "betterautototem",
 	"version": "${version}",
 	"name": "BetterAutototem",
-	"description": "%99.9 Undetectable autototem mod.",
+	"description": "A client-side mod that automatically restocks a totem of undying into your offhand after one is used with a configurable delay.",
 	"authors": [
 		"oneaura"
 	],
 	"contact": {
-		"homepage": "https://github.com/oneauraaaaa",
-		"sources": "https://github.com/oneauraaaaa"
+		"homepage": "https://github.com/oneauraaaaa/betterautototem",
+		"sources": "https://github.com/oneauraaaaa/betterautototem"
 	},
 	"license": "MIT",
 	"icon": "assets/betterautototem/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"com.oneaura.betterautototem.BetterAutototem"
 		],
         "client": [
           "com.oneaura.betterautototem.BetterAutototemClient"
+        ],
+        "modmenu": [
+          "com.oneaura.betterautototem.config.ModMenuIntegration"
         ]
 	},
 	"mixins": [
